@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SchComponent } from './sch.component';
+import { ReposComponent } from './repos.component';
 
-describe('SchComponent', () => {
-  let component: SchComponent;
-  let fixture: ComponentFixture<SchComponent>;
+describe('ReposComponent', () => {
+  let component: ReposComponent;
+  let fixture: ComponentFixture<ReposComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SchComponent ]
+      declarations: [ ReposComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SchComponent);
+    fixture = TestBed.createComponent(ReposComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

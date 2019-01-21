@@ -1,28 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { LandingPageService } from './service/landing-page.service';
 
-import { AppRoutingModule } from './app-routing.module';
+
+
+ 
 import { AppComponent } from './app.component';
-import { GithubComponent } from './github/github.component';
-import { LdPageComponent } from './ld-page/ld-page.component';
-import { RepositoriesComponent } from './repositories/repositories.component';
-import { SchComponent } from './sch/sch.component';
-import { ServiceComponent } from './service/service.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { DateCountPipe } from './date-count.pipe';
+import { ReposComponent } from './repos/repos.component';
+import { SearchFormComponent } from './search-form/search-form.component';
+import {FormsModule} from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    GithubComponent,
-    LdPageComponent,
-    RepositoriesComponent,
-    SchComponent,
-    ServiceComponent
+    LandingPageComponent,
+    DateCountPipe,
+    ReposComponent,
+    SearchFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    FormsModule,
+
   ],
-  providers: [],
+  providers: [LandingPageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
