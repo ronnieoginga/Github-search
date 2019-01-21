@@ -13,14 +13,17 @@
     <br>
 
        <div class="row">
-         class='text-success'>Name: <br>{{user.name}
-         class='text-success'>username  <br>{{user.login}
-         class='text-success'>repositories <br>{{user.public_repos}}
-         class='text-success'>folllowers<br>{{user.followers}
-         class='text-success'>Following <br>{{user.following}}
+          <ul style="list-style-type:square">
+           <li>
+              <p class='text-success'>Name: <br>{{user.name}}</p>
+            </li>
+           <li><p class='text-success'>username  <br>{{user.login}}</p></li>
+           <li><p class='text-success'>repositories <br>{{user.public_repos}} </p></li>
+           <li><p class='text-success'>folllowers<br>{{user.followers}}</p></li>
+           <li> <p class='text-success'>Following <br>{{user.following}}</p></li>
+         </ul>
 
-
-    </div> 
+    </div>
 
   <br>
   <div *ngIf="user">
