@@ -1,43 +1,47 @@
 
 <div class="jumbotron">
   <h1 class="header">Github Search</h1>
-  
+
 </div>
 
 
 <app-search-form></app-search-form>
 <div class="col-sm-6">
   <img src="{{user.avatar_url}}" class="img" alt="">
+
 </div>
 <br>
+<div class="col-md-6">
+  <div class="row">
+    <ul style="list-style-type:square">
+      <li>
+        <p class='text-success'>Name: <br>{{user.name}}</p>
+      </li>
+      <li>
+        <p class='text-success'>username <br>{{user.login}}</p>
+      </li>
+      <li>
+        <p class='text-success'>repositories <br>{{user.public_repos}}</p>
+      </li>
+      <li>
+        <p class='text-success'>folllowers<br>{{user.followers}}</p>
+      </li>
+      <li>
+        <p class='text-success'>Following <br>{{user.following}}</p>
+      </li>
+    </ul>
 
-<div class="row">
-  <ul style="list-style-type:square">
-    <li>
-      <p class='text-success'>Name: <br>{{user.name}}</p>
-    </li>
-    <li>
-      <p class='text-success'>username <br>{{user.login}}</p>
-    </li>
-    <li>
-      <p class='text-success'>repositories <br>{{user.public_repos}} </p>
-    </li>
-    <li>
-      <p class='text-success'>folllowers<br>{{user.followers}}</p>
-    </li>
-    <li>
-      <p class='text-success'>Following <br>{{user.following}}</p>
-    </li>
-  </ul>
+  </div>
 
 </div>
 
 <br>
 <div *ngIf="user">
-  <div class="panel panel-default">
-    <div class="panel-heading" id="heading">
-      <p class="names"><span class="glyphicon glyphicon-user"></span> {{user.login}} <small>({{user.name}})</small></p>
+
+
+      <p class="names"><span class="glyphicon glyphicon-user"></span> {{user.login}}</p>
+      <p> <small>User name:{{user.name}}</small></p>
+
     </div>
 <a href="{{user.html_url}}" target="_blank" class="btn btn-danger btn-sm  ml-auto" id="view"> VIEW ALL <span class="glyphicon glyphicon-share-alt"></span></a>
-</div>
-</div>
+ 
