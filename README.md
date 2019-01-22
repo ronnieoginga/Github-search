@@ -17,6 +17,11 @@ One is just required to just type in the name of the user and it will bring u th
 Simply log into your git hub account.
 
 Search for user name Ronnieoginga then clone the repository
+
+## Deployed link to gh pages
+
+https://ronnieoginga.github.io/Github-search/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
