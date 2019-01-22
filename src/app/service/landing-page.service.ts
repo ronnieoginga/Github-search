@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 import {environment} from '../../environments/environment'
@@ -30,7 +29,7 @@ export class LandingPageService {
       location:string;
       html_url:string;
       repos_url:string;
-
+      created_at:Date;
       forks:number;
 
     }
@@ -47,7 +46,7 @@ export class LandingPageService {
         this.user.location=response.location;
         this.user.html_url=response.html_url;
         this.user.repos_url=response.repos_url;
-        
+        this.user.created_at=response.created_at;
         resolve()
       },
 
