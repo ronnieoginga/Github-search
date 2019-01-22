@@ -1,8 +1,21 @@
- .col-md-6{
-   float: right;
- }
+
 p{
   width: 8rem;
   font-weight:bold;
   color: purple;
+}
+img{
+  float:none;
+  width:90px;
+  height:90px;
+}
+.Search{
+  background-image: url("https://www.lifewire.com/thmb/xtwNQkqd-61Xi96EvbwSPPE_UsU=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/182786404-56a9f6725f9b58b7d00038e0.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.header{
+  text-align: center;
+text-transform: uppercase;
+
 }

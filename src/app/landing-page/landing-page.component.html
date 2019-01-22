@@ -1,15 +1,26 @@
-
+<div class="container-fluid">
 <div class="jumbotron">
   <h1 class="header">Github Search</h1>
 
-
+</div>
  <br>
 
 
 
 
-   <div class="col-md-6">
-     <app-search-form></app-search-form>
+
+<div class="row">
+
+
+  <div class="col-md-3">
+    <div class="Search">
+      <app-search-form></app-search-form>
+      <img src="https://www.lifewire.com/thmb/xtwNQkqd-61Xi96EvbwSPPE_UsU=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/182786404-56a9f6725f9b58b7d00038e0.jpg" class="img" alt="">
+  </div>
+
+</div>
+
+     <div class="col-md-5">
 
        <ul style="list-style-type:square">
          <li>
@@ -31,17 +42,21 @@
 
 
 </div>
-    <div class="col-md-6">
+
+
+    <div class="col-md-4">
       <img src="{{user.avatar_url}}" class="img" alt="">
       <div *ngIf="user">
 
 
-            <p class="names"><span class="glyphicon glyphicon-user"></span> Name{{user.login}}</p>
-            <p> <small>User name:{{user.name}}</small></p>
+            <p>Original Name :{{user.name}} </p>
+            <p>User Name :{{user.login}}</p>
 
 
       <a href="{{user.html_url}}" target="_blank" class="btn btn-success btn-sm  ml-auto" id="view"> VIEW ALL <span class="glyphicon glyphicon-share-alt"></span></a>
-  </div>
-    </div>
+   </div>
 
+
+</div>
+</div>
 </div>

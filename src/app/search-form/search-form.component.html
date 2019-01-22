@@ -3,7 +3,7 @@
   <form (ngSubmit)="submitUser(name)" #userForm="ngForm" >
     <div class="form-group">
       <div class="col-sm-6">
-        <input type="text" class="form-control" id="inputtext" id="input" placeholder="Enter Github username"
+        <input type="text" class="form-control" id="inputtext" id="input" placeholder="username"
         [(ngModel)]="newSearch.name" name="name" (keyup)= "submitUser(name)" #name='ngModel'>
       </div>
     </div>

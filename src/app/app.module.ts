@@ -8,7 +8,7 @@ import { LandingPageService } from './service/landing-page.service';
 
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-
+import { DateCountPipe } from './date-count.pipe';
 import { ReposComponent } from './repos/repos.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import {FormsModule} from '@angular/forms';
@@ -19,7 +19,7 @@ import {FormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     LandingPageComponent,
-
+    DateCountPipe,
     ReposComponent,
     SearchFormComponent,
   ],

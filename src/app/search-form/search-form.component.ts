@@ -9,7 +9,7 @@ import { Search } from '../search';
   styleUrls: ['./search-form.component.css']
 })
 export class SearchFormComponent implements OnInit {
-  newSearch = new Search('','','',0);
+  newSearch = new Search('','','','');
 
   submitUser(name){
     this.LandingPageService.getLandingPageInfo(name.value);
