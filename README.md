@@ -8,7 +8,15 @@ Ronald Otieno Oginga
 
 ## Project Description
 
+Git hub search is an angular developed application that enables one to searchfor any user on git hub.
 
+One is just required to just type in the name of the user and it will bring u the users details.
+
+## Set up instructions
+
+Simply log into your git hub account.
+
+Search for user name Ronnieoginga then clone the repository
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
