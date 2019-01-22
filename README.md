@@ -20,7 +20,7 @@ Search for user name Ronnieoginga then clone the repository
 
 ## Deployed link to gh pages
 
-https://ronnieoginga.github.io/Github-search/
+https://ronnieoginga.github.io/Github-search/.
 
 ## Development server
 
